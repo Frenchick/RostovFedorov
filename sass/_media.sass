@@ -1,5 +1,132 @@
-@media screen and ( max-width: 1200px )
-    html
-        font-size: 12px
-    
+@media screen and ( max-width: 1200px  )
+  html
+    font-size: 12px
+  .nav
+    &__item
+      margin-left: 1rem
+  .customers
+    &__card
+      &__pricetag
+        flex-direction: column
+        display: none
+        
+@media screen and ( max-width: 992px  )
+  .hero
+    &__instagram
+      display: none
+    &__content
+      margin-left: 0
+  .nav
+    display: none
+@media screen and ( max-width: 760px )
+  .footer
+    &__policy
+      margin-top: 1rem
+      display: flex
+    &__form
+      display: flex
+      flex-direction: column
+  .design
+    background: $dark url('../img/line-bg.png') no-repeat center/ cover
+    &__section-title
+      color: $light
+    &__section
+      &__discription
+        color: $light
+  .team
+    background: $dark url('../img/line-bg.png') no-repeat center/ cover
+    padding-top: 40rem
+    padding-bottom: 10rem
+    &__text
+      color: $light
+    &__row
+      margin-top: -10rem
+    &__card
+      margin-top: 10rem
+  .control
+    background: $dark url('../img/line-bg.png') no-repeat center/ cover
+    &__text
+      color: $light
+    &__policy
+      margin-top: 1rem
+      display: flex
+    &__input
+      &-group
+        margin-bottom: 2rem
+    &__form
+      flex-direction: column
+      color: $light
+    &__button
+      margin-top: 4rem
+      order: 4
+  .section
+    &__steps
+      display: none
+    &-title
+      &__word
+        &::after
+          display: none
+  .row
+    flex-direction: column
+    align-items: center
+  .col-50
+    width: 100%
+  .types
+    &__card
+      margin-bottom: 4.28rem
+    .card
+      &__text
+        margin-left: 0
+  .card-adbt-h
+    display: none
+  .card-adbt-s
+    display: block
+  .customers
+    &__card
+      &__title
+        max-width: 12.714rem
+@media screen and ( max-width: 570px  )
+  .contacts
+    &__phone
+      margin-right: 0
+      color: $light
+      text-decoration: none
+    &__button
+      display: none
+  .title
+    font-size: 1.64rem
+  .hero
+    &__scroll-down
+      display: none
+    &__content
+      max-width: 100%
+    &__text
+      font-size: 1.29rem
+      margin-bottom: 2.28rem
+    &__button
+      display: block
+      width: 100%
+      margin-bottom: 1.85rem
+  .footer
+    &__wrap
+      margin: 0
+      margin-bottom: 5rem
+    &__container
+      display: flex
+      flex-direction: column
+    &__map
+      order: 3
+    &__location
+      order: 4
+  .customers
+    display: none
+  .team
+    &__text
+      display: none
+
+      
+@media screen and ( max-height: 570px )
+  .hero
+    &__scroll-down
+      display: none
     

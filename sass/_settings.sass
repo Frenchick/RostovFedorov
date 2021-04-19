@@ -1,25 +1,49 @@
-*, *:before, *:after
-    box-sizing: border-box
+*, *:before,*:after
+  box-sizing: border-box
 html
-    font-size: 14px
+  font-size: 14px
 body
-    font-family: 'Futura Book', sans-serif
+  font-family: 'Futura Book', sans-serif
+  font-size: 1rem
 img
-    max-width: 100%
+  max-width: 100%
 .section
-    padding: 60px 0
-    &-title
-        text-align: center
-        text-transform: uppercase
-        font-family: 'Yeseva One', cursive
-        &__image
-            display: flex
-            justify-content: center
-            align-items: center
-            &::before, &::after
-                content: ''
-                width: 32px
-                height: 2px
-                background-color: $primary
-                margin: 0px 10px
-            
+  padding: 4.28rem 0
+        
+  &--dark
+    background-color: $dark
+    color: $light
+  &-title
+    text-align: center
+    &--light
+      color: $light
+    &--left
+      text-align: left
+    &__heading
+      text-transform: uppercase
+      font-family: 'Yeseva One', cursive
+      line-height: 138%
+      &--primary
+        color: $primary
+    &__word
+      display: flex
+      align-items: center
+      &::after
+        content: ''
+        width: 6.42rem
+        height: 0.071rem
+        background-color: $primary
+        margin-left: 2rem
+    &__text
+      font-size: 1.28rem
+      line-height: 2.07rem
+      max-width: 31.57rem
+    &__image
+      &::after, &::before
+        content: ''
+        display: inline-block
+        vertical-align: text-top
+        width: 2.28rem
+        height: 0.142rem
+        background-color: $primary
+        margin: 0 0.714rem

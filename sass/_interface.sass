@@ -1,18 +1,80 @@
 .button
-    padding: 13px 20px
-    border: none
-    border-radius: 2px
-    text-transform: uppercase
+  padding: 0.785rem 1.714rem
+  border: none
+  border-radius: 0.142rem
+  text-transform: uppercase
+  font-size: 0.93rem
+  &:hover
+    cursor: pointer
+  &--primary
+    background-color: $primary
+    color: $light
+    box-shadow: 0 0.357rem 1.071rem rgba($primary, 0.2)
+    transition: box-shadow 0.2s
     &:hover
-        cursor: pointer
-    &--primary
-        background-color: $primary
-        color: $light
-        box-shadow: 0px 5px 15px rgba($primary, 0.2)
-        transition: box-shadow 0.3s
-        &:hover
-            box-shadow: none
-    &--outline
-        border: 1px solid $light
-        background-color: transparent
-        color: $light
+      box-shadow: none
+  &--outline
+    border: 0.071rem solid $light
+    background-color: transparent
+    color: $light
+    box-shadow: 0 0.357rem 1.071rem rgba($dark, 0.2)
+    transition: box-shadow 0.2s
+    &:hover
+      box-shadow: none
+.label
+  &--light
+    color: rgba($light, 0.5)
+    font-size: 1.07rem
+.input
+  border: none
+  border-bottom: 0.071rem solid rgba(54,54,54, 0.3)
+  background-color: transparent
+  font-size: 1.285rem
+  color: $light
+  padding: 0.5rem 0
+  &--light
+    &::placeholder
+     color: $light
+.policy
+  &__checkbox
+    opacity: 0
+    visibility: hidden
+    &:checked +
+      .policy__label
+        &::before
+          background: $primary url('../img/check.svg') no-repeat center / 0.8rem
+  &__label
+    display: flex
+    align-items: center
+    font-size: 1.142rem
+    &::before
+      content: ''
+      width: 1.28rem
+      height: 1.28rem
+      border: 0.071rem solid $primary
+      border-radius: 0.071rem
+      cursor: pointer
+      margin-right: 0.64rem
+    &--center
+      justify-content: center
+#button-up 
+    display: none
+    right: 3.57rem
+    position: fixed
+    bottom: 3.57rem
+    outline: none
+    color: $light
+    background-color: $primary
+    line-height: 1.42rem
+    text-decoration: none
+    padding: 0.714rem
+    z-index: 50
+    border-radius: 0.365rem
+    box-shadow: 0 0.14rem 0.285rem #999
+    cursor: pointer
+div
+  &.invalid
+    color: tomato
+input
+  &.invalid
+    border-bottom: 1px solid tomato

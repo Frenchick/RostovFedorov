@@ -1,0 +1,47 @@
+.projects
+  background: $dark url('../img/line-black-bg.png') center / cover
+  padding-bottom: 30rem
+  &__left
+    flex-wrap: wrap
+  &__info__slider
+    margin-bottom: 2.357rem
+    
+.swiper
+  &-pagination__project
+    padding-left: 1.28rem
+  &-slide
+    display: flex
+    flex-wrap: wrap
+    &__text
+      flex-basis: 50%
+      margin-bottom: 2.42rem
+      padding-bottom: 2rem
+    &__heading
+      color: $primary
+      font-size: 1.285rem
+      line-height: 1.78rem
+      font-family: 'Yaseva One', cursive
+      text-transform: uppercase
+      margin-bottom: 0.64rem
+  &-pagination
+    &-bullet
+      background-color: rgba($light, 0.3)
+      &-active
+        background-color: $light
+  &-button
+    &-prev,&-next
+      width: 4rem
+      height: 1rem
+      background-size: 3rem
+      bottom: 0
+      top: auto
+      &::after
+        display: none
+    &-prev
+      left: 0
+      background: url('../img/arrow-prev.svg') no-repeat left
+    &-next
+      background: url('../img/arrow-next.svg') no-repeat left
+.swiper-container-horizontal>.swiper-pagination-bullets
+  width: auto
+  bottom: -1px
